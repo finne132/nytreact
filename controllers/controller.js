@@ -28,7 +28,7 @@ router.post("/api/delete/:articleMongoId", function(req, res) {
 
 // wildcard route for any undefined paths, just send back to home page
 // not going to do a 404 for this one because the assignment is overdue (time constraint) and
-// it's a single-page app (don't reeeeeally need one if there is a / redirect)
+// it's a single-page app (don't reeeeeally need one if there is a wildcard / redirect)
 router.get("*", function(req, res) {
   res.redirect("/");
 });
